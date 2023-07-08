@@ -15,8 +15,6 @@ while True:
         keepon = input('遊戲結束，要再玩一把嗎？(y/n)')
         if not (keepon == 'y'):
             break
-        else:
-            continue
     elif keyin > target:
         print('再小一點')
         max = keyin -1
