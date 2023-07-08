@@ -4,8 +4,8 @@ min = 1
 max = 100
 count = 0
 target = random.randint(min, max)
-print('=====猜數字遊戲開始=====')
 print(target)
+print('=====猜數字遊戲開始=====')
 while True:
     keyin = int(input(f'猜數字遊戲範圍{min}~{max}:'))
     count += 1
@@ -13,7 +13,7 @@ while True:
         print(f'猜對了，答案是:{target}')
         print(f'您總共猜了{count}次')
         keepon = input('遊戲結束，要再玩一把嗎？(y/n)')
-        if keepon = 'n':
+        if not (keepon == 'y'):
             break
         else:
             continue
