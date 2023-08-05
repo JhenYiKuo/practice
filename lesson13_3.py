@@ -4,11 +4,11 @@ import streamlit as st
 
 
 #介面
-value = st.slider('三角函數',min_value=0,max_value=10)
+value = st.slider('三角函數',min_value=0,max_value=16)
 
-t = np.arange(0.0,value,0.05)
-y1 = np.sin(2 * np.pi * t)
-y2 = np.cos(2 * np.pi * t)
+t = np.arange(0.0,5,0.05)
+y1 = np.sin(np.random.randn() * np.pi * t)
+y2 = np.cos(np.random.randn() * np.pi * t)
 
 #製圖
 figure1 = plt.figure(figsize=(8,4))
